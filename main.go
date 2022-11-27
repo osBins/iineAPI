@@ -42,7 +42,6 @@ func main() {
 	for key, element := range data {
 		c = append(c, Compliments{Id: key, Compliment: element})
 	}
-
 	fetchCompliment()
 	fmt.Println("Server Running")
 	router := mux.NewRouter().StrictSlash(true)
